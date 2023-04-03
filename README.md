@@ -16,9 +16,9 @@ Business objectives:
 
 ## Data understanding:
 -  The dataset contains X-ray and CT images of both Non-COVID and COVID cases.
-The dataset has been augmented with different techniques to generate approximately 17,099 images.There are two main folders in the dataset, one for X-ray images and the other for CT images.
-The X-ray folder contains two sub-folders of 5,500 Non-COVID images and 4,044 COVID images.The CT folder also contains two sub-folders of 2,628 Non-COVID images and 5,427 COVID images.
-The dataset was published on June 12, 2020, and is currently in Version 3. The contributors to the dataset are Walid El-Shafai and Fathi E. Abd El-Samie. https://data.mendeley.com/datasets/8h65ywd2jr 
+The dataset has been augmented with different techniques to generate approximately 17,099 images. There are two main folders in the dataset, one for X-ray images and the other for CT images.
+- The X-ray folder contains two sub-folders of 5,500 Non-COVID images and 4,044 COVID images.The CT folder also contains two sub-folders of 2,628 Non-COVID images and 5,427 COVID images.
+- The dataset was published on June 12, 2020, and is currently in Version 3. The contributors to the dataset are Walid El-Shafai and Fathi E. Abd El-Samie. https://data.mendeley.com/datasets/8h65ywd2jr 
 
 
 ## Modeling
