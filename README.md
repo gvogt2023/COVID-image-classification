@@ -48,6 +48,8 @@ In both X-Ray and CT scan, the distribution of grayscale values slightly deviate
 
 ![CT Grayscale Distribution](imgs/ct_grayscale.png) 
 
+We can see that CT scans have a bit starker of a distribution than for X-Rays between positive and negative cases, suggesting that it might be easier for CT imaging models to distinguish between the two binary classes. Additionally, we can see that for all image types, the grayscale value of 0 (white) is prevalent across the board, meaning that there are a lot of white pixels and could potentially add to difficulty in selecting between the classes.
+
 ## Modeling
 
 - Baseline model: This model has two convolutional layers with 32 and 64 filters respectively, followed by a dense layer with 16 units and a sigmoid output layer. It uses a batch size of 64 and an early stopping callback with a minimum delta of 1e-2 and patience of 5. The loss function is 'binary_crossentropy'.
