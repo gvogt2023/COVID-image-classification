@@ -50,6 +50,8 @@ In both X-Ray and CT scan, the distribution of grayscale values slightly deviate
 
 We can see that CT scans have a bit starker of a distribution than for X-Rays between positive and negative cases, suggesting that it might be easier for CT imaging models to distinguish between the two binary classes. Additionally, we can see that for all image types, the grayscale value of 0 (white) is prevalent across the board, meaning that there are a lot of white pixels and could potentially add to difficulty in selecting between the classes.
 
+Note that because our stakeholders want to avoid false negatives, we will be optimizing for recall while also keeping accuracy as an additional key meric. 
+
 ## Modeling
 
 - Baseline model: This model has two convolutional layers with 32 and 64 filters respectively, followed by a dense layer with 16 units and a sigmoid output layer. It uses a batch size of 64 and an early stopping callback with a minimum delta of 1e-2 and patience of 5. The loss function is 'binary_crossentropy'.
@@ -59,3 +61,25 @@ We can see that CT scans have a bit starker of a distribution than for X-Rays be
 - Model 2: This model is also similar to the baseline model, but has L2 regularization with a weight of 0.01 on the weights of the second and third convolutional layers, and the dense layer before the output layer. It uses a batch size of 32 and trains for 10 epochs with no early stopping. Additionally, it tracks precision and recall as additional metrics.
 
 - Model 3 (final model): This model has a more complex architecture, with four convolutional layers, each with 32 or 64 filters, followed by two dense layers with 256 units each, and a sigmoid output layer. It uses a batch size of 32 and trains for 20 epochs with no early stopping. The loss function is 'binary_crossentropy' and the optimizer is 'Adam'.
+
+- Model 4: Updated the learning rate of Adam optimizer to .01.
+
+- Model 4: Updated learning rate of Adam optimizer to .001 and updated filters for dense layer from 32 to 64.
+
+## Evaluation
+
+CT results:
+
+- Model 1 (baseline): Test accuracy: 0.657 No additional metrics reported
+- Model 2: Test accuracy: 0.917 No additional metrics reported
+- Model 3: Test accuracy: 0.857 Test precision: 0.717 Test recall: 0.964
+- Model 4: Test accuracy: 0.903 Test precision: 0.890 Test recall: 0.817
+- Model 5: Test accuracy: 0.903 Test precision: 0.890 Test recall: 0.817
+
+Additional test accuracy reported after training on more epochs: 0.917 Based on our criteria of selecting the model with the highest recall, Model 3 has the highest recall score of 0.964. However, if we also consider test accuracy and precision, then Model 4 would also be a good choice as it has a slightly lower recall score of 0.817, but higher accuracy and precision scores, so we are going with model 4. Note that Model 5 has the same metrics as Model 4 except for the additional test accuracy reported after training on more epochs, so we may also consider this model.
+
+X-Ray results:
+
+
+
+
