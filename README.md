@@ -26,18 +26,27 @@ Chest X-rays can be used to assess the severity of COVID-19 in some cases. COVID
 
 Here is an example of a COVID-positive X-Ray:
 
+![COVID positive](imgs/covid_xray.png) 
+
 Here is an example of a COVID-negative X-Ray:
+
+![COVID negative](imgs/noncovid_xray.png) 
 
 COVID-19 can cause pneumonia, and a CT scan of the chest can show the extent of lung involvement. A typical CT scan of the chest in a COVID-19 patient may show ground-glass opacities, which appear as hazy areas in the lungs. These opacities may be patchy or diffuse and may involve multiple lobes of the lung.
 
 Here is an example of a COVID-negative CT scan:
 
+![COVID positive](imgs/covid_ct.png) 
+
 Here is an example of ea COVID-positive CT scan:
 
+![COVID negative](imgs/noncovid_ct.png) 
 
 In both X-Ray and CT scan, the distribution of grayscale values slightly deviate from each other for COVID vs. Non-COVID images:
 
+![X-Ray Grayscale Distribution](imgs/xray_grayscale.png) 
 
+![CT Grayscale Distribution](imgs/ct_grayscale.png) 
 
 ## Modeling
 
