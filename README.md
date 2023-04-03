@@ -81,5 +81,11 @@ Additional test accuracy reported after training on more epochs: 0.917 Based on 
 X-Ray results:
 
 
+## Conclusions and recommendations
+
+- CT scan is better at predicting COVID than X-Ray
+- Model can still be useful for a generalization of risk, but probably not ideal for diagnosis
+- Look at differences between pneumonia and COVID positive images to see if we can improve accuracy be combining these models
+- Further improvements can be implemented with additional layers in the neural net, data augmentation or additional hyper-parameter tuning
 
 
