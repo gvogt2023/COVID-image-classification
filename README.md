@@ -20,6 +20,24 @@ The dataset has been augmented with different techniques to generate approximate
 - The X-ray folder contains two sub-folders of 5,500 Non-COVID images and 4,044 COVID images.The CT folder also contains two sub-folders of 2,628 Non-COVID images and 5,427 COVID images.
 - The dataset was published on June 12, 2020, and is currently in Version 3. The contributors to the dataset are Walid El-Shafai and Fathi E. Abd El-Samie. https://data.mendeley.com/datasets/8h65ywd2jr 
 
+## Exploring the data
+
+Chest X-rays can be used to assess the severity of COVID-19 in some cases. COVID-19 can cause pneumonia, and a chest X-ray can show the extent of lung involvement. A typical chest X-ray in a COVID-19 patient may show patchy or diffuse areas of hazy opacity in the lungs.
+
+Here is an example of a COVID-positive X-Ray:
+
+Here is an example of a COVID-negative X-Ray:
+
+COVID-19 can cause pneumonia, and a CT scan of the chest can show the extent of lung involvement. A typical CT scan of the chest in a COVID-19 patient may show ground-glass opacities, which appear as hazy areas in the lungs. These opacities may be patchy or diffuse and may involve multiple lobes of the lung.
+
+Here is an example of a COVID-negative CT scan:
+
+Here is an example of ea COVID-positive CT scan:
+
+
+In both X-Ray and CT scan, the distribution of grayscale values slightly deviate from each other for COVID vs. Non-COVID images:
+
+
 
 ## Modeling
 
