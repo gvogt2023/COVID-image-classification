@@ -80,15 +80,15 @@ Additional test accuracy reported after training on more epochs: 0.917 Based on 
 
 X-Ray results:
 
-- Model 1: Achieved an accuracy of 43.01% on the test set. This model achieved perfect training accuracy but very poor test accuracy. This suggests that the model has overfit to the training data and is unable to generalize to new data.
+- Model 1: Achieved an accuracy of 43.01% on the test set with 0.0 test loss, indicating that the model has overfit to the training data and is unable to generalize to new data.
 
-- Model 2 (final model): Achieved an accuracy of 89.89% on the test set, with a test loss of 0.3999. This model achieved high accuracy and low loss on both the training and test data, indicating that it has learned the underlying patterns in the data well and is able to generalize to new data. The test accuracy is almost 90%, which is very good. This ended up being the best model to date.
+- Model 2: Achieved an accuracy of 90.83% on the test set, with a test loss of 0.3501. It also achieved high precision and recall scores, indicating that it is able to correctly identify positive cases of COVID-19 with high confidence.
 
-- Model 3: Achieved an accuracy of 84.22% on the validation set, with a precision of 86.87%, a recall of 85.75%, and a validation loss of 0.4438. This model achieved high accuracy and precision, indicating that it is able to correctly identify positive cases of COVID-19. The recall score is also high, indicating that it is able to correctly identify most positive cases. The validation accuracy and validation precision are slightly lower, which suggests that the model may be overfitting to the training data.
+- Model 3: Achieved an accuracy of 83.97% on the test set, with a precision of 86.41% and a recall of 85.29%. The test accuracy and precision are slightly lower, which suggests that the model may be overfitting to the training data still but much improved for overfitting over model 2.
 
-- Model 4: Achieved an accuracy of 58.01% on the test set, with a precision of 58.01%, a recall of 100%, and a test loss of 0.7023. This model achieved low accuracy and precision, indicating that it is not able to correctly identify positive cases of COVID-19. However, the recall score is 1.0, which means that it is able to correctly identify all positive cases. This suggests that the model is biased towards predicting positive cases, which may be due to class imbalance in the dataset.
+- Model 4: Achieved an accuracy of 56.99% on the test set, with a precision of 56.99% and a recall of 100%. This model performed poorly and was not able to correctly identify positive cases of COVID-19. This is a very poor model.
 
-- Model 5: Achieved an accuracy of 81.86% on the test set, with a precision of 84.68%, a recall of 83.91%, and a test loss of 0.5084. This model achieved moderate accuracy, precision, and recall, indicating that it is able to correctly identify positive cases of COVID-19, but not with high confidence. The precision score is slightly lower than the recall score, which suggests that the model may be making more false positive predictions than false negative predictions.
+- Model 5: Achieved an accuracy of 83.18% on the test set, with a precision of 84.83% and a recall of 85.85%. This model achieved moderate accuracy, precision, and recall, indicating that it is able to correctly identify positive cases of COVID-19, but not with high confidence. The precision score is slightly lower than the recall score, which suggests that the model may be making more false positive predictions than false negative predictions. Since we are optimizing for avoid false negative predictions, we will select this one as final.
 
 ## Conclusions and recommendations
 
