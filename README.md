@@ -64,7 +64,7 @@ Note that because our stakeholders want to avoid false negatives, we will be opt
 
 - Model 4: Updated the learning rate of Adam optimizer to .01.
 
-- Model 4: Updated learning rate of Adam optimizer to .001 and updated filters for dense layer from 32 to 64.
+- Model 5: Updated learning rate of Adam optimizer to .001 and updated filters for dense layer from 32 to 64.
 
 ## Evaluation
 
